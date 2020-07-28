@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package common;
+option java_package = "com.talking.grpc.common";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+option java_multiple_files = true;
+
+enum GenderType {
+    MALE = 0;
+    FEMALE = 1;
+}
+
+message User {
+    int64 id = 1;
+    string name = 2;
+    common.GenderType genderType = 3;
+    int32 age = 4;
+    string pr = 5;
+    ProfileImage profileImage = 6;
+    google.protobuf.Timestamp lastOnlineDatetime = 7;
+    google.protobuf.Timestamp created = 8;
+    google.protobuf.Timestamp modified = 9;
+}
+
+message ProfileImage {
+    google.protobuf.StringValue imageOriginalUrl = 1;
+    google.protobuf.StringValue image100Url = 2;
+    google.protobuf.StringValue image300Url = 3;
+    google.protobuf.StringValue image600Url = 4;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+package block;
+
+option java_package = "com.talking.grpc.block";
+option java_multiple_files = true;
+
+message BlockRequest {
+    int64 toUserId = 1;
+}
+
+service BlockService {
+    // ブロック
+    rpc Block(BlockRequest) returns (google.protobuf.Empty);
+}

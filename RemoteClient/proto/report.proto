@@ -1,0 +1,17 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+package report;
+
+option java_package = "com.talking.grpc.report";
+option java_multiple_files = true;
+
+message PostReportRequest {
+    int64 toUserId = 1;
+    string message = 2;
+}
+
+service ReportService {
+    // 通報
+    rpc PostReport(PostReportRequest) returns (google.protobuf.Empty);
+}

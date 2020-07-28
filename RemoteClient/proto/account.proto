@@ -1,0 +1,42 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+import "commons.proto";
+
+package account;
+
+option java_package = "com.talking.grpc.user";
+option java_multiple_files = true;
+
+message RegisterUserRequest {
+    string name = 1;
+    common.GenderType genderType = 2;
+    int32 age = 3;
+    string pr = 4;
+}
+
+message RegisterUserResponse {
+    string apiToken = 1;
+    common.User user = 2;
+}
+
+message UpdateProfileRequest {
+    // google.protobufにすると、nullを設定できる。
+    // optional扱いにできる。
+    google.protobuf.StringValue name = 1;
+    google.protobuf.Int32Value age = 2;
+    google.protobuf.StringValue pr = 3;
+}
+
+service AccountRegisterService {
+    // ユーザー/登録
+    rpc Register(RegisterUserRequest) returns (RegisterUserResponse);
+}
+
+service AccountService {
+    // ユーザー/プロフィール編集
+    rpc UpdateProfile(UpdateProfileRequest) returns (google.protobuf.Empty);
+
+    // ユーザー/退会
+    rpc Leave(google.protobuf.Empty) returns (google.protobuf.Empty);
+}

@@ -1,0 +1,35 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+import "commons.proto";
+
+package user;
+
+option java_package = "com.talking.grpc.users";
+option java_multiple_files = true;
+
+message GetUsersRequest {
+    int32 limit = 1;
+    google.protobuf.Timestamp maxOnlineDatetime = 2;
+}
+
+message GetUsersResponse {
+    repeated common.User users = 1;
+}
+
+message GetUserRequest {
+    int32 userId = 1;
+}
+
+message GetUserResponse {
+    common.User user = 1;
+}
+
+service UserService {
+
+    // ユーザーのリスト取得
+    rpc GetUsers(GetUsersRequest) returns (GetUsersResponse);
+
+    // 指定したidのユーザーを取得
+    rpc GetUserById(GetUserRequest) returns (GetUserResponse);
+}

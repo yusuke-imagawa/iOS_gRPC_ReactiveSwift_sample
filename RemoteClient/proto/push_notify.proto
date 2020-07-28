@@ -1,0 +1,23 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+package push_notify;
+
+option java_package = "com.talking.grpc.push_notify";
+option java_multiple_files = true;
+
+message SavePushTokenIosRequest {
+    string deviceToken = 1;
+}
+
+message UpdateNotifyRequest {
+    bool isEnabled = 1;
+}
+
+service PushNotifyService {
+    // プッシュ通知デバイストークン_iOS / 登録, 更新
+    rpc SavePushTokenIos(SavePushTokenIosRequest) returns (google.protobuf.Empty);
+
+    // プッシュ通知_ON/OFF更新
+    rpc UpdateNotify(UpdateNotifyRequest) returns (google.protobuf.Empty);
+}

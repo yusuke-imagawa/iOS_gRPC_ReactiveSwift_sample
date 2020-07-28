@@ -1,0 +1,1063 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4106CB96EEA1BA2D1BB2EA5A /* Pods_TalkingSns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4DB4E1EC09714899AE6F47 /* Pods_TalkingSns.framework */; };
+		56B016962E56BABA21F3CB17 /* Pods_TalkingSns_TalkingSnsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1CFF386F06FBCFA841E388 /* Pods_TalkingSns_TalkingSnsUITests.framework */; };
+		A612012923F6CA7300F3E425 /* UsersApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A612012823F6CA7300F3E425 /* UsersApiService.swift */; };
+		A620DE932450B425000CE6D0 /* proto in Resources */ = {isa = PBXBuildFile; fileRef = A620DE922450B424000CE6D0 /* proto */; };
+		A630D5D523E8CFA30082CD6E /* RegisterUserResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630D5D423E8CFA30082CD6E /* RegisterUserResponseEntity.swift */; };
+		A648D6C82393E2FF0083C697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A648D6C72393E2FF0083C697 /* AppDelegate.swift */; };
+		A648D6CE2393E3090083C697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A648D6CD2393E3090083C697 /* Assets.xcassets */; };
+		A648D6D12393E3090083C697 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A648D6D02393E3090083C697 /* Preview Assets.xcassets */; };
+		A648D6D42393E3090083C697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A648D6D22393E3090083C697 /* LaunchScreen.storyboard */; };
+		A648D6DF2393E30A0083C697 /* TalkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A648D6DE2393E30A0083C697 /* TalkingTests.swift */; };
+		A648D6EA2393E30A0083C697 /* TalkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A648D6E92393E30A0083C697 /* TalkingUITests.swift */; };
+		A67EA65F2443CFD400B589E6 /* ProfileImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67EA65E2443CFD400B589E6 /* ProfileImageEntity.swift */; };
+		A69B35FF23C82BC100D1C2F4 /* BlockApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B35FE23C82BC100D1C2F4 /* BlockApiClient.swift */; };
+		A69B360123C82BD100D1C2F4 /* CallingApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B360023C82BD100D1C2F4 /* CallingApiClient.swift */; };
+		A69B360323C82BDF00D1C2F4 /* ChatApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B360223C82BDF00D1C2F4 /* ChatApiClient.swift */; };
+		A69B360723C82C0600D1C2F4 /* PushNotifyApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B360623C82C0600D1C2F4 /* PushNotifyApiClient.swift */; };
+		A69B360923C82C1700D1C2F4 /* ReportApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B360823C82C1700D1C2F4 /* ReportApiClient.swift */; };
+		A69B360B23C82C2600D1C2F4 /* AccountApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B360A23C82C2600D1C2F4 /* AccountApiClient.swift */; };
+		A69B360E23C82C6700D1C2F4 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B360C23C82C6700D1C2F4 /* UserDefaultsKey.swift */; };
+		A69B360F23C82C6700D1C2F4 /* CurrentUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B360D23C82C6700D1C2F4 /* CurrentUserService.swift */; };
+		A69B361123C82C9E00D1C2F4 /* CurrentUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B361023C82C9E00D1C2F4 /* CurrentUserEntity.swift */; };
+		A69B361323C82CCD00D1C2F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B361223C82CCD00D1C2F4 /* Constant.swift */; };
+		A6A53B3B24650A5A00346828 /* RemoteClient in Resources */ = {isa = PBXBuildFile; fileRef = A6A53B3A24650A5A00346828 /* RemoteClient */; };
+		A6B0220823E640AC0067DE3E /* GrpcServiceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0220723E640AC0067DE3E /* GrpcServiceLoader.swift */; };
+		A6B0220B23E789910067DE3E /* CallingStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0220A23E789910067DE3E /* CallingStatusEntity.swift */; };
+		A6B0220D23E789BB0067DE3E /* AllChatMessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0220C23E789BB0067DE3E /* AllChatMessageEntity.swift */; };
+		A6B0220F23E789C90067DE3E /* ChatMessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0220E23E789C90067DE3E /* ChatMessageEntity.swift */; };
+		A6B0221323E78A0E0067DE3E /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0221223E78A0E0067DE3E /* UserEntity.swift */; };
+		A6B7F9BC2445762100F724EE /* GRPCProtoCall+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B7F9BB2445762100F724EE /* GRPCProtoCall+extension.swift */; };
+		A6D0F61224351FE300C03C08 /* ReceivedMessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0F61124351FE300C03C08 /* ReceivedMessageEntity.swift */; };
+		F2FB720227870AE6DFA1EB4E /* Pods_TalkingSnsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0A4FFC8B88064061F89450 /* Pods_TalkingSnsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A648D6DB2393E30A0083C697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A648D6BC2393E2FF0083C697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A648D6C32393E2FF0083C697;
+			remoteInfo = Talking;
+		};
+		A648D6E62393E30A0083C697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A648D6BC2393E2FF0083C697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A648D6C32393E2FF0083C697;
+			remoteInfo = Talking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02CAC4664C1384DA4771B7FC /* Pods-TalkingSns.production_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingSns.production_debug.xcconfig"; path = "Target Support Files/Pods-TalkingSns/Pods-TalkingSns.production_debug.xcconfig"; sourceTree = "<group>"; };
+		220904E2A7219C64EC79D696 /* Pods-TalkingSns-TalkingSnsUITests.local_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingSns-TalkingSnsUITests.local_debug.xcconfig"; path = "Target Support Files/Pods-TalkingSns-TalkingSnsUITests/Pods-TalkingSns-TalkingSnsUITests.local_debug.xcconfig"; sourceTree = "<group>"; };
+		4564CCE050F201ADF39D2543 /* Pods-TalkingSns.local_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingSns.local_debug.xcconfig"; path = "Target Support Files/Pods-TalkingSns/Pods-TalkingSns.local_debug.xcconfig"; sourceTree = "<group>"; };
+		4D4AA817F4E90F2BD276C9A2 /* Pods-TalkingSnsTests.production_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingSnsTests.production_debug.xcconfig"; path = "Target Support Files/Pods-TalkingSnsTests/Pods-TalkingSnsTests.production_debug.xcconfig"; sourceTree = "<group>"; };
+		6BD1FA4C7835B4C29698F3DF /* Pods-TalkingSns-TalkingSnsUITests.production_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingSns-TalkingSnsUITests.production_debug.xcconfig"; path = "Target Support Files/Pods-TalkingSns-TalkingSnsUITests/Pods-TalkingSns-TalkingSnsUITests.production_debug.xcconfig"; sourceTree = "<group>"; };
+		6F4DB4E1EC09714899AE6F47 /* Pods_TalkingSns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingSns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DE57EEE4A86FA43A547E86 /* Pods-TalkingSns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingSns.release.xcconfig"; path = "Target Support Files/Pods-TalkingSns/Pods-TalkingSns.release.xcconfig"; sourceTree = "<group>"; };
+		7F1CFF386F06FBCFA841E388 /* Pods_TalkingSns_TalkingSnsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingSns_TalkingSnsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FD741C7E936308D78F7CBA /* Pods-TalkingSnsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingSnsTests.release.xcconfig"; path = "Target Support Files/Pods-TalkingSnsTests/Pods-TalkingSnsTests.release.xcconfig"; sourceTree = "<group>"; };
+		A603F25F23B517BB008A3120 /* Talking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Talking-Bridging-Header.h"; sourceTree = "<group>"; };
+		A612012823F6CA7300F3E425 /* UsersApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersApiService.swift; sourceTree = "<group>"; };
+		A620DE922450B424000CE6D0 /* proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = proto; path = RemoteClient/proto; sourceTree = SOURCE_ROOT; };
+		A630D5D423E8CFA30082CD6E /* RegisterUserResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserResponseEntity.swift; sourceTree = "<group>"; };
+		A648D6C42393E2FF0083C697 /* Talking_Local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talking_Local.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A648D6C72393E2FF0083C697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A648D6CD2393E3090083C697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A648D6D02393E3090083C697 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A648D6D32393E3090083C697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A648D6D52393E3090083C697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A648D6DA2393E30A0083C697 /* TalkingSnsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkingSnsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A648D6DE2393E30A0083C697 /* TalkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkingTests.swift; sourceTree = "<group>"; };
+		A648D6E02393E30A0083C697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A648D6E52393E30A0083C697 /* TalkingSnsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkingSnsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A648D6E92393E30A0083C697 /* TalkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkingUITests.swift; sourceTree = "<group>"; };
+		A648D6EB2393E30A0083C697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67EA65E2443CFD400B589E6 /* ProfileImageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageEntity.swift; sourceTree = "<group>"; };
+		A69B35FE23C82BC100D1C2F4 /* BlockApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockApiClient.swift; sourceTree = "<group>"; };
+		A69B360023C82BD100D1C2F4 /* CallingApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingApiClient.swift; sourceTree = "<group>"; };
+		A69B360223C82BDF00D1C2F4 /* ChatApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatApiClient.swift; sourceTree = "<group>"; };
+		A69B360623C82C0600D1C2F4 /* PushNotifyApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyApiClient.swift; sourceTree = "<group>"; };
+		A69B360823C82C1700D1C2F4 /* ReportApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportApiClient.swift; sourceTree = "<group>"; };
+		A69B360A23C82C2600D1C2F4 /* AccountApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountApiClient.swift; sourceTree = "<group>"; };
+		A69B360C23C82C6700D1C2F4 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		A69B360D23C82C6700D1C2F4 /* CurrentUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserService.swift; sourceTree = "<group>"; };
+		A69B361023C82C9E00D1C2F4 /* CurrentUserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserEntity.swift; sourceTree = "<group>"; };
+		A69B361223C82CCD00D1C2F4 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A6A53B3A24650A5A00346828 /* RemoteClient */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RemoteClient; sourceTree = "<group>"; };
+		A6B0220723E640AC0067DE3E /* GrpcServiceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrpcServiceLoader.swift; sourceTree = "<group>"; };
+		A6B0220A23E789910067DE3E /* CallingStatusEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingStatusEntity.swift; sourceTree = "<group>"; };
+		A6B0220C23E789BB0067DE3E /* AllChatMessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChatMessageEntity.swift; sourceTree = "<group>"; };
+		A6B0220E23E789C90067DE3E /* ChatMessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageEntity.swift; sourceTree = "<group>"; };
+		A6B0221223E78A0E0067DE3E /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		A6B7F9BB2445762100F724EE /* GRPCProtoCall+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GRPCProtoCall+extension.swift"; sourceTree = "<group>"; };
+		A6D0F61124351FE300C03C08 /* ReceivedMessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedMessageEntity.swift; sourceTree = "<group>"; };
+		A6F4BA022454B56C007125D2 /* TalkingSns.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalkingSns.entitlements; sourceTree = "<group>"; };
+		DB26CC031B3E008C66075C4B /* Pods-TalkingSnsTests.local_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingSnsTests.local_debug.xcconfig"; path = "Target Support Files/Pods-TalkingSnsTests/Pods-TalkingSnsTests.local_debug.xcconfig"; sourceTree = "<group>"; };
+		ED0A4FFC8B88064061F89450 /* Pods_TalkingSnsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingSnsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF5E8EF3D2334301D2D4167 /* Pods-TalkingSns-TalkingSnsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingSns-TalkingSnsUITests.release.xcconfig"; path = "Target Support Files/Pods-TalkingSns-TalkingSnsUITests/Pods-TalkingSns-TalkingSnsUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A648D6C12393E2FF0083C697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4106CB96EEA1BA2D1BB2EA5A /* Pods_TalkingSns.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A648D6D72393E30A0083C697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2FB720227870AE6DFA1EB4E /* Pods_TalkingSnsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A648D6E22393E30A0083C697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B016962E56BABA21F3CB17 /* Pods_TalkingSns_TalkingSnsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E0DC1EE9B7D37229B003651 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F4DB4E1EC09714899AE6F47 /* Pods_TalkingSns.framework */,
+				7F1CFF386F06FBCFA841E388 /* Pods_TalkingSns_TalkingSnsUITests.framework */,
+				ED0A4FFC8B88064061F89450 /* Pods_TalkingSnsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A648D6BB2393E2FF0083C697 = {
+			isa = PBXGroup;
+			children = (
+				A6A53B3A24650A5A00346828 /* RemoteClient */,
+				A620DE922450B424000CE6D0 /* proto */,
+				A648D6C62393E2FF0083C697 /* TalkingSns */,
+				A648D6DD2393E30A0083C697 /* TalkingSnsTests */,
+				A648D6E82393E30A0083C697 /* TalkingSnsUITests */,
+				A648D6C52393E2FF0083C697 /* Products */,
+				0E0DC1EE9B7D37229B003651 /* Frameworks */,
+				E4D9966FEC8CED52C91303CF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A648D6C52393E2FF0083C697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A648D6C42393E2FF0083C697 /* Talking_Local.app */,
+				A648D6DA2393E30A0083C697 /* TalkingSnsTests.xctest */,
+				A648D6E52393E30A0083C697 /* TalkingSnsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A648D6C62393E2FF0083C697 /* TalkingSns */ = {
+			isa = PBXGroup;
+			children = (
+				A6F4BA022454B56C007125D2 /* TalkingSns.entitlements */,
+				A648D6D22393E3090083C697 /* LaunchScreen.storyboard */,
+				A648D6D52393E3090083C697 /* Info.plist */,
+				A648D6C72393E2FF0083C697 /* AppDelegate.swift */,
+				A69B35BC23C81D1A00D1C2F4 /* Common */,
+				A69B35B923C81CD100D1C2F4 /* UI */,
+				A69B35BA23C81D0000D1C2F4 /* Model */,
+				A648D6CD2393E3090083C697 /* Assets.xcassets */,
+				A648D6CF2393E3090083C697 /* Preview Content */,
+				A603F25F23B517BB008A3120 /* Talking-Bridging-Header.h */,
+			);
+			path = TalkingSns;
+			sourceTree = "<group>";
+		};
+		A648D6CF2393E3090083C697 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A648D6D02393E3090083C697 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A648D6DD2393E30A0083C697 /* TalkingSnsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A648D6DE2393E30A0083C697 /* TalkingTests.swift */,
+				A648D6E02393E30A0083C697 /* Info.plist */,
+			);
+			path = TalkingSnsTests;
+			sourceTree = "<group>";
+		};
+		A648D6E82393E30A0083C697 /* TalkingSnsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A648D6E92393E30A0083C697 /* TalkingUITests.swift */,
+				A648D6EB2393E30A0083C697 /* Info.plist */,
+			);
+			path = TalkingSnsUITests;
+			sourceTree = "<group>";
+		};
+		A69B35B923C81CD100D1C2F4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A69B35BA23C81D0000D1C2F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A69B35BE23C81D3E00D1C2F4 /* GrpcAPI */,
+				A69B361023C82C9E00D1C2F4 /* CurrentUserEntity.swift */,
+				A69B360D23C82C6700D1C2F4 /* CurrentUserService.swift */,
+				A69B360C23C82C6700D1C2F4 /* UserDefaultsKey.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A69B35BC23C81D1A00D1C2F4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0F613243546D300C03C08 /* Extension */,
+				A69B35BD23C81D2600D1C2F4 /* Constant */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A69B35BD23C81D2600D1C2F4 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A69B361223C82CCD00D1C2F4 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		A69B35BE23C81D3E00D1C2F4 /* GrpcAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A6B0220923E788080067DE3E /* Response */,
+				A69B35FD23C82B9100D1C2F4 /* Client */,
+				A6B0220723E640AC0067DE3E /* GrpcServiceLoader.swift */,
+			);
+			path = GrpcAPI;
+			sourceTree = "<group>";
+		};
+		A69B35FD23C82B9100D1C2F4 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				A69B35FE23C82BC100D1C2F4 /* BlockApiClient.swift */,
+				A69B360023C82BD100D1C2F4 /* CallingApiClient.swift */,
+				A69B360223C82BDF00D1C2F4 /* ChatApiClient.swift */,
+				A69B360623C82C0600D1C2F4 /* PushNotifyApiClient.swift */,
+				A69B360823C82C1700D1C2F4 /* ReportApiClient.swift */,
+				A69B360A23C82C2600D1C2F4 /* AccountApiClient.swift */,
+				A612012823F6CA7300F3E425 /* UsersApiService.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		A6B0220923E788080067DE3E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A6B0220A23E789910067DE3E /* CallingStatusEntity.swift */,
+				A6B0220C23E789BB0067DE3E /* AllChatMessageEntity.swift */,
+				A6D0F61124351FE300C03C08 /* ReceivedMessageEntity.swift */,
+				A6B0220E23E789C90067DE3E /* ChatMessageEntity.swift */,
+				A6B0221223E78A0E0067DE3E /* UserEntity.swift */,
+				A630D5D423E8CFA30082CD6E /* RegisterUserResponseEntity.swift */,
+				A67EA65E2443CFD400B589E6 /* ProfileImageEntity.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A6D0F613243546D300C03C08 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A6B7F9BB2445762100F724EE /* GRPCProtoCall+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E4D9966FEC8CED52C91303CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4564CCE050F201ADF39D2543 /* Pods-TalkingSns.local_debug.xcconfig */,
+				02CAC4664C1384DA4771B7FC /* Pods-TalkingSns.production_debug.xcconfig */,
+				79DE57EEE4A86FA43A547E86 /* Pods-TalkingSns.release.xcconfig */,
+				220904E2A7219C64EC79D696 /* Pods-TalkingSns-TalkingSnsUITests.local_debug.xcconfig */,
+				6BD1FA4C7835B4C29698F3DF /* Pods-TalkingSns-TalkingSnsUITests.production_debug.xcconfig */,
+				EDF5E8EF3D2334301D2D4167 /* Pods-TalkingSns-TalkingSnsUITests.release.xcconfig */,
+				DB26CC031B3E008C66075C4B /* Pods-TalkingSnsTests.local_debug.xcconfig */,
+				4D4AA817F4E90F2BD276C9A2 /* Pods-TalkingSnsTests.production_debug.xcconfig */,
+				A2FD741C7E936308D78F7CBA /* Pods-TalkingSnsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A648D6C32393E2FF0083C697 /* TalkingSns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A648D6EE2393E30A0083C697 /* Build configuration list for PBXNativeTarget "TalkingSns" */;
+			buildPhases = (
+				CBD7475F8A1C647C05671B3B /* [CP] Check Pods Manifest.lock */,
+				A648D6C02393E2FF0083C697 /* Sources */,
+				A648D6C12393E2FF0083C697 /* Frameworks */,
+				A648D6C22393E2FF0083C697 /* Resources */,
+				A917E1205ACF9125C30BB8BF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkingSns;
+			productName = Talking;
+			productReference = A648D6C42393E2FF0083C697 /* Talking_Local.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A648D6D92393E30A0083C697 /* TalkingSnsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A648D6F12393E30A0083C697 /* Build configuration list for PBXNativeTarget "TalkingSnsTests" */;
+			buildPhases = (
+				DD721A9256AC218B5DBEB312 /* [CP] Check Pods Manifest.lock */,
+				A648D6D62393E30A0083C697 /* Sources */,
+				A648D6D72393E30A0083C697 /* Frameworks */,
+				A648D6D82393E30A0083C697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A648D6DC2393E30A0083C697 /* PBXTargetDependency */,
+			);
+			name = TalkingSnsTests;
+			productName = TalkingTests;
+			productReference = A648D6DA2393E30A0083C697 /* TalkingSnsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A648D6E42393E30A0083C697 /* TalkingSnsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A648D6F42393E30A0083C697 /* Build configuration list for PBXNativeTarget "TalkingSnsUITests" */;
+			buildPhases = (
+				23A86C9DF1CE9AAFB818DC52 /* [CP] Check Pods Manifest.lock */,
+				A648D6E12393E30A0083C697 /* Sources */,
+				A648D6E22393E30A0083C697 /* Frameworks */,
+				A648D6E32393E30A0083C697 /* Resources */,
+				638BDBAE2248CAA240CCCDCB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A648D6E72393E30A0083C697 /* PBXTargetDependency */,
+			);
+			name = TalkingSnsUITests;
+			productName = TalkingUITests;
+			productReference = A648D6E52393E30A0083C697 /* TalkingSnsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A648D6BC2393E2FF0083C697 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = imagawa;
+				TargetAttributes = {
+					A648D6C32393E2FF0083C697 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1130;
+					};
+					A648D6D92393E30A0083C697 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A648D6C32393E2FF0083C697;
+					};
+					A648D6E42393E30A0083C697 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A648D6C32393E2FF0083C697;
+					};
+				};
+			};
+			buildConfigurationList = A648D6BF2393E2FF0083C697 /* Build configuration list for PBXProject "TalkingSns" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ja,
+				Base,
+			);
+			mainGroup = A648D6BB2393E2FF0083C697;
+			productRefGroup = A648D6C52393E2FF0083C697 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A648D6C32393E2FF0083C697 /* TalkingSns */,
+				A648D6D92393E30A0083C697 /* TalkingSnsTests */,
+				A648D6E42393E30A0083C697 /* TalkingSnsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A648D6C22393E2FF0083C697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A648D6D42393E3090083C697 /* LaunchScreen.storyboard in Resources */,
+				A620DE932450B425000CE6D0 /* proto in Resources */,
+				A648D6D12393E3090083C697 /* Preview Assets.xcassets in Resources */,
+				A6A53B3B24650A5A00346828 /* RemoteClient in Resources */,
+				A648D6CE2393E3090083C697 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A648D6D82393E30A0083C697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A648D6E32393E30A0083C697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23A86C9DF1CE9AAFB818DC52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkingSns-TalkingSnsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		638BDBAE2248CAA240CCCDCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkingSns-TalkingSnsUITests/Pods-TalkingSns-TalkingSnsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkingSns-TalkingSnsUITests/Pods-TalkingSns-TalkingSnsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TalkingSns-TalkingSnsUITests/Pods-TalkingSns-TalkingSnsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A917E1205ACF9125C30BB8BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkingSns/Pods-TalkingSns-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkingSns/Pods-TalkingSns-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TalkingSns/Pods-TalkingSns-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD7475F8A1C647C05671B3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkingSns-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD721A9256AC218B5DBEB312 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkingSnsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A648D6C02393E2FF0083C697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69B360B23C82C2600D1C2F4 /* AccountApiClient.swift in Sources */,
+				A6B0221323E78A0E0067DE3E /* UserEntity.swift in Sources */,
+				A612012923F6CA7300F3E425 /* UsersApiService.swift in Sources */,
+				A6B0220F23E789C90067DE3E /* ChatMessageEntity.swift in Sources */,
+				A69B360E23C82C6700D1C2F4 /* UserDefaultsKey.swift in Sources */,
+				A69B360123C82BD100D1C2F4 /* CallingApiClient.swift in Sources */,
+				A69B35FF23C82BC100D1C2F4 /* BlockApiClient.swift in Sources */,
+				A648D6C82393E2FF0083C697 /* AppDelegate.swift in Sources */,
+				A67EA65F2443CFD400B589E6 /* ProfileImageEntity.swift in Sources */,
+				A69B361323C82CCD00D1C2F4 /* Constant.swift in Sources */,
+				A6B0220D23E789BB0067DE3E /* AllChatMessageEntity.swift in Sources */,
+				A6B0220B23E789910067DE3E /* CallingStatusEntity.swift in Sources */,
+				A69B360323C82BDF00D1C2F4 /* ChatApiClient.swift in Sources */,
+				A6D0F61224351FE300C03C08 /* ReceivedMessageEntity.swift in Sources */,
+				A69B361123C82C9E00D1C2F4 /* CurrentUserEntity.swift in Sources */,
+				A6B7F9BC2445762100F724EE /* GRPCProtoCall+extension.swift in Sources */,
+				A69B360923C82C1700D1C2F4 /* ReportApiClient.swift in Sources */,
+				A6B0220823E640AC0067DE3E /* GrpcServiceLoader.swift in Sources */,
+				A69B360723C82C0600D1C2F4 /* PushNotifyApiClient.swift in Sources */,
+				A69B360F23C82C6700D1C2F4 /* CurrentUserService.swift in Sources */,
+				A630D5D523E8CFA30082CD6E /* RegisterUserResponseEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A648D6D62393E30A0083C697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A648D6DF2393E30A0083C697 /* TalkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A648D6E12393E30A0083C697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A648D6EA2393E30A0083C697 /* TalkingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A648D6DC2393E30A0083C697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A648D6C32393E2FF0083C697 /* TalkingSns */;
+			targetProxy = A648D6DB2393E30A0083C697 /* PBXContainerItemProxy */;
+		};
+		A648D6E72393E30A0083C697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A648D6C32393E2FF0083C697 /* TalkingSns */;
+			targetProxy = A648D6E62393E30A0083C697 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A648D6D22393E3090083C697 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A648D6D32393E3090083C697 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A648D6EC2393E30A0083C697 /* Local_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Local_Debug;
+		};
+		A648D6ED2393E30A0083C697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A648D6EF2393E30A0083C697 /* Local_Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4564CCE050F201ADF39D2543 /* Pods-TalkingSns.local_debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TalkingSns/TalkingSns.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"TalkingSns/Preview Content\"";
+				DEVELOPMENT_TEAM = 3BPALQ9M7M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TalkingSns/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D LOCAL_DEBUG -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.talking.talking-sns.dev";
+				PRODUCT_NAME = Talking_Local;
+				SWIFT_OBJC_BRIDGING_HEADER = "TalkingSns/Talking-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Local_Debug;
+		};
+		A648D6F02393E30A0083C697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DE57EEE4A86FA43A547E86 /* Pods-TalkingSns.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconProd;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TalkingSns/TalkingSns.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"TalkingSns/Preview Content\"";
+				DEVELOPMENT_TEAM = 3BPALQ9M7M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TalkingSns/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.talking.talking-sns";
+				PRODUCT_NAME = Talking;
+				SWIFT_OBJC_BRIDGING_HEADER = "TalkingSns/Talking-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A648D6F22393E30A0083C697 /* Local_Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB26CC031B3E008C66075C4B /* Pods-TalkingSnsTests.local_debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BPALQ9M7M;
+				INFOPLIST_FILE = TalkingSnsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talking.TalkingSnsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkingSns.app/TalkingSns";
+			};
+			name = Local_Debug;
+		};
+		A648D6F32393E30A0083C697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2FD741C7E936308D78F7CBA /* Pods-TalkingSnsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BPALQ9M7M;
+				INFOPLIST_FILE = TalkingSnsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talking.TalkingSnsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkingSns.app/TalkingSns";
+			};
+			name = Release;
+		};
+		A648D6F52393E30A0083C697 /* Local_Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220904E2A7219C64EC79D696 /* Pods-TalkingSns-TalkingSnsUITests.local_debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BPALQ9M7M;
+				INFOPLIST_FILE = TalkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talking.TalkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Talking;
+			};
+			name = Local_Debug;
+		};
+		A648D6F62393E30A0083C697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF5E8EF3D2334301D2D4167 /* Pods-TalkingSns-TalkingSnsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BPALQ9M7M;
+				INFOPLIST_FILE = TalkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talking.TalkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Talking;
+			};
+			name = Release;
+		};
+		A6A53B362464FD1C00346828 /* Production_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Production_Debug;
+		};
+		A6A53B372464FD1C00346828 /* Production_Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02CAC4664C1384DA4771B7FC /* Pods-TalkingSns.production_debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconProd;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TalkingSns/TalkingSns.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"TalkingSns/Preview Content\"";
+				DEVELOPMENT_TEAM = 3BPALQ9M7M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TalkingSns/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D PRODUCTION_DEBUG -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.talking.talking-sns";
+				PRODUCT_NAME = Talking;
+				SWIFT_OBJC_BRIDGING_HEADER = "TalkingSns/Talking-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Production_Debug;
+		};
+		A6A53B382464FD1C00346828 /* Production_Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4AA817F4E90F2BD276C9A2 /* Pods-TalkingSnsTests.production_debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BPALQ9M7M;
+				INFOPLIST_FILE = TalkingSnsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talking.TalkingSnsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkingSns.app/TalkingSns";
+			};
+			name = Production_Debug;
+		};
+		A6A53B392464FD1C00346828 /* Production_Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD1FA4C7835B4C29698F3DF /* Pods-TalkingSns-TalkingSnsUITests.production_debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BPALQ9M7M;
+				INFOPLIST_FILE = TalkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talking.TalkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Talking;
+			};
+			name = Production_Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A648D6BF2393E2FF0083C697 /* Build configuration list for PBXProject "TalkingSns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A648D6EC2393E30A0083C697 /* Local_Debug */,
+				A6A53B362464FD1C00346828 /* Production_Debug */,
+				A648D6ED2393E30A0083C697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A648D6EE2393E30A0083C697 /* Build configuration list for PBXNativeTarget "TalkingSns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A648D6EF2393E30A0083C697 /* Local_Debug */,
+				A6A53B372464FD1C00346828 /* Production_Debug */,
+				A648D6F02393E30A0083C697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A648D6F12393E30A0083C697 /* Build configuration list for PBXNativeTarget "TalkingSnsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A648D6F22393E30A0083C697 /* Local_Debug */,
+				A6A53B382464FD1C00346828 /* Production_Debug */,
+				A648D6F32393E30A0083C697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A648D6F42393E30A0083C697 /* Build configuration list for PBXNativeTarget "TalkingSnsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A648D6F52393E30A0083C697 /* Local_Debug */,
+				A6A53B392464FD1C00346828 /* Production_Debug */,
+				A648D6F62393E30A0083C697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A648D6BC2393E2FF0083C697 /* Project object */;
+}

@@ -1,0 +1,66 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+package calling;
+
+option java_package = "com.talking.grpc.calling";
+option java_multiple_files = true;
+
+message StartCallingRequest {
+    int64 toUserId = 1;
+}
+
+message StartCallingResponse {
+    StartCallingResultType resultType = 1;
+}
+
+enum StartCallingResultType {
+    SUCCESS = 0;
+    TO_USER_IN_TALKING = 1;
+}
+
+message ReceiveCallingRequest {
+    int64 fromUserId = 1;
+    int64 toUserId = 2;
+}
+
+message EndCallingRequest {
+    int64 fromUserId = 1;
+    int64 toUserId = 2;
+}
+
+message ContinueCallingRequest {
+    int64 fromUserId = 1;
+    int64 toUserId = 2;
+}
+
+message StatusResponse {
+    int64 fromUserId = 1;
+    int64 toUserId = 2;
+    CallingStatus status = 3;
+}
+
+enum CallingStatus {
+    STARTING = 0;
+    TALKING = 1;
+    END = 2;
+}
+
+service CallingService {
+    // 通話を掛ける。
+    rpc StartCalling(StartCallingRequest) returns (StartCallingResponse);
+
+    // 通話を受ける。
+    rpc ReceiveCalling(ReceiveCallingRequest) returns (google.protobuf.Empty);
+
+    // 通話を切る。
+    rpc EndCalling(EndCallingRequest) returns (google.protobuf.Empty);
+
+    // 通話が継続していることを記録
+    rpc ContinueCalling(ContinueCallingRequest) returns (google.protobuf.Empty);
+
+    // 通話 / ステータス受信　ステータス: 開始、通話中、終了
+    //    ・ステータスの変更時に受信する。
+    //    ・clientからの接続時にも受信する。
+    rpc ReceiveCallingStatus(google.protobuf.Empty) returns (stream StatusResponse);
+}
